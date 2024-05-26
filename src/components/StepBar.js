@@ -1,8 +1,8 @@
 import React from 'react'
 import './StepBar.css'
 
-function StepBar() {
-    const step = 1; //props
+function StepBar({step}) {
+    
   return (
     <div className='setepBar'>
         {[1,2,3,4].map((n)=>(

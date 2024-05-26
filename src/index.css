@@ -96,3 +96,20 @@ main{
     width: 100%;
     height: 100%;
 }
+
+/* styling */
+.App{
+  background-color: var(--clr-n-Magnolia);
+}
+
+section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 75vh;
+  justify-content: space-between;
+}
+
+section > div {
+  background-color: var(--clr-n-White);
+}

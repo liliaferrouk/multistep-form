@@ -1,8 +1,24 @@
 import React from 'react'
+import './Buttons.css'
 
-function Buttons() {
+function Buttons({step,setStep}) {
   return (
-    <div>Buttons</div>
+    <div className='buttons'>
+      <div className={`btn-back ${step <= 1 ? 'hidden' : ''}`}>
+        Go Back
+      </div>
+      {
+        (step>3)
+        ?
+        <div className='btn-confirm'>
+          Confirm
+        </div>
+        :
+        <div className='btn-next'>
+          Next Step
+        </div>
+      }
+    </div>
   )
 }
 

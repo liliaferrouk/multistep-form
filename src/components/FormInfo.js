@@ -1,8 +1,9 @@
 import React from 'react'
+import './FormInfo.css'
 
 function FormInfo() {
   return (
-    <div>FormInfo</div>
+    <div className='div-form-info'>FormInfo</div>
   )
 }
 
