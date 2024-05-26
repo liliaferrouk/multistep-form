@@ -5,8 +5,9 @@ import StepBar from "./components/StepBar";
 import ThankYou from "./components/ThankYou";
 
 function App() {
-  const submited = false
-  const step= 4
+  
+  const [submited,setSubmited] = useState(false)
+  const [step,setStep]= useState(1)
   return (
     <div className="App">
       <main>
@@ -18,8 +19,8 @@ function App() {
             <ThankYou/>
             :
             <>
-              <FormInfo step={step}/>
-              <Buttons step={step}/>
+              <FormInfo/>
+              <Buttons step={step} setStep={setStep} setSubmited={setSubmited}/>
             </>
           }
         </section>

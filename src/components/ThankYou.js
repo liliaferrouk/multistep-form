@@ -5,10 +5,10 @@ import img_done from '../images/icon-thank-you.svg'
 function ThankYou() {
   return (
     <div className='thankYouDiv'>
-        <img src={img_done} alt="" />
+        <img src={img_done} alt="thank you icon" />
         <h1>Thank you!</h1>
-        <p>Thanks for confirming your subscription! We hope you have fun 
-            using our platform. If you ever need support, please feel free 
+        <p>Thanks for confirming your subscription! We hope you have fun
+            using our platform. If you ever need support, please feel free
             to email us at support@loremgaming.com.</p>
     </div>
   )
