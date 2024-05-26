@@ -1,0 +1,22 @@
+.thankYouDiv{
+    width: 90%;
+    min-height: 25rem;
+    border-radius: 10px;
+    position: relative;
+    top: -4rem;
+    padding: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.thankYouDiv > img{
+    width: 55px;
+    height: 55px;
+}
+
+.thankYouDiv > p{
+    text-align: center;
+}

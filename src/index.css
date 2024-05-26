@@ -113,3 +113,15 @@ section{
 section > div {
   background-color: var(--clr-n-White);
 }
+
+h1{
+  margin-top: 10px;
+  font-weight: 700;
+  color: var(--clr-p-blue-marine);
+}
+
+p{
+  color: var(--clr-n-gray-cool);
+  font-weight: 450;
+  font-size: 0.98rem;
+}
