@@ -1,10 +1,10 @@
 import React from 'react'
 import './Buttons.css'
 
-function Buttons({step,setStep}) {
+function Buttons({step}) {
   return (
     <div className='buttons'>
-      <div className={`btn-back ${step <= 1 ? 'hidden' : ''}`}>
+      <div className={`btn-back ${step <= 1 ? 'hidden' : ''}`} >
         Go Back
       </div>
       {

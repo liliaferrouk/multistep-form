@@ -5,20 +5,21 @@ import StepBar from "./components/StepBar";
 import ThankYou from "./components/ThankYou";
 
 function App() {
-  const [step,setStep] = useState(5)
+  const submited = false
+  const step= 4
   return (
     <div className="App">
       <main>
         <StepBar step={step}/>
         <section>
           {
-            (step>4)
+            (submited)
             ?
             <ThankYou/>
             :
             <>
               <FormInfo step={step}/>
-              <Buttons step={step} setStep={setStep}/>
+              <Buttons step={step}/>
             </>
           }
         </section>
