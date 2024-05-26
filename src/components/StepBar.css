@@ -1,0 +1,29 @@
+.setepBar{
+    height: 25vh; /* Full height */
+    background-image: url('../images/bg-sidebar-mobile.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    padding-top: 5vh;
+}
+
+.step > .num{
+    color: var(--clr-n-White);
+    font-weight: 450;
+    margin-inline: 0.5rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 1.5px solid var(--clr-n-White);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.active > .num{
+    background-color: var(--clr-p-blue-light);
+    border: none;
+    color: var(--clr-p-blue-marine);
+}
