@@ -1,1 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
+:root {
+  /* colors */
+  --clr-p-blue-marine: hsl(213, 96%, 18%);
+  --clr-p-blue-purplish: hsl(243, 100%, 62%);
+  --clr-p-blue-pastel: hsl(228, 100%, 84%);
+  --clr-p-blue-light: hsl(206, 94%, 87%);
+  --clr-p-red-strawberry: hsl(354, 84%, 57%);
+  --clr-n-gray-cool: hsl(231, 11%, 63%);
+  --clr-n-gray-light: hsl(229, 24%, 87%);
+  --clr-n-Magnolia: hsl(217, 100%, 97%);
+  --clr-n-Alabaster: hsl(231, 100%, 99%);
+  --clr-n-White: hsl(0, 0%, 100%);
+
+}
+
+/* ------------------- */
+/* Reset               */
+/* ------------------- */
+
+/* https://piccalil.li/blog/a-modern-css-reset/ */
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-weight: 400;
+}
+
+/* set up the body */
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+/* make images easier to work with */
+img,
+picutre {
+  max-width: 100%;
+  display: block;
+}
+
+/* make form elements easier to work with */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+*,
+*::before,
+*::after {
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.01ms !important;
+  scroll-behavior: auto !important;
+}
+}
+
+#root{
+  min-height: 100vh;
+}
+.App{
+  height: 100vh;
+}
