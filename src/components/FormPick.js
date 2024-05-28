@@ -1,7 +1,7 @@
 import React from 'react'
 import './FormPick.css'
 
-function FormPick() {
+function FormPick({data,updateFields}) {
   return (
     <div className='div-form-pick'>FormPick</div>
   )
