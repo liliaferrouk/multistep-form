@@ -1,7 +1,74 @@
 .div-form-select{
     width: 90%;
-    height: 23.5rem;
+    min-height: 31rem;
     border-radius: 10px;
     position: relative;
     top: -4rem;
+    padding: 1.3rem;
 }
+
+.div-form-select >p{
+    margin-top: 3px;
+    margin-bottom: 1.5rem;
+}
+
+.div-form-select h2{
+    font-size: 1rem;
+    color: var(--clr-p-blue-marine);
+    font-weight: 500;
+}
+
+.price{
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.plan{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border: 1px solid var(--clr-n-gray-cool);
+    border-radius: 8px;
+    height: 4.9rem;
+    margin-bottom: 10px;
+    padding: 17px;
+}
+.plan.selected{
+    background-color: var(--clr-n-Alabaster);
+    border: 1.2px solid var(--clr-p-blue-purplish);
+}
+
+.plan > img{
+    margin-right: 12px;
+}
+
+.type-plan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--clr-n-Alabaster);
+    margin-top: 1.5rem;
+    height: 3rem;
+    border-radius: 10px;
+}
+
+.clickPlan{
+    background-color: var(--clr-p-blue-marine);
+    width: 38px;
+    height: 20px;
+    border-radius: 15px;
+    display: flex;
+    /* start / end */
+    justify-content: start;
+    align-items: center;
+    padding: 3px;
+}
+
+.circle{
+    background-color: var(--clr-n-White);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+

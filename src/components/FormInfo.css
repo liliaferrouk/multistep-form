@@ -11,16 +11,12 @@
     margin-bottom: 20px;
 }
 
-.form-group {
-    /* margin-bottom: 1.5rem; */
-}
-
 .form-group label {
     display: block;
     color: var(--clr-p-blue-marine);
     font-size: 0.8rem;
 }
-  
+
 .form-input {
     width: 100%;
     padding-left: 0.95rem;
