@@ -16,7 +16,6 @@ function FormInfo({data,updateFields}) {
       <div className="form-group">
         <label htmlFor="name">Name</label>
         <input
-          autoFocus
           required
           type="text"
           placeholder="e.g. Stephen King"

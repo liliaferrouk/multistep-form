@@ -8,6 +8,9 @@ function FormSelect({data,updateFields}) {
     updateFields({ plan: selectedPlanId });
     console.log("selcted"+ data.plan)
   };
+  const toggle = () => {
+    updateFields({ monthly: !data.monthly });
+  };
   return (
     <div className='div-form-select'>
       <h1>Select your plan</h1>
@@ -19,17 +22,18 @@ function FormSelect({data,updateFields}) {
             name={plan.name}
             monthlyPrice={plan.monthlyPrice}
             yearlyPrice={plan.yearlyPrice}
+            isMonthly={data.monthly}
             icon={plan.icon}
             isSelected={data.plan === plan.id}
             onSelect={handlePlanSelect}
           />
         ))}
-      <div className="type-plan">
-        <span>Monthly</span>
+      <div className={`type-plan ${data.monthly ? 'm':'y'}`} onClick={toggle}>
+        <span className="monthly">Monthly</span>
         <span className="clickPlan">
           <span className="circle"></span>
         </span>
-        <span>Yearly</span>
+        <span className='yearly'>Yearly</span>
       </div>
     
     </div>

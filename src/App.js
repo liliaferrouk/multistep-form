@@ -12,7 +12,7 @@ function App() {
     name: "",
     email: "",
     phoneNumber: "",
-    mothly:true, //if false => yearly
+    monthly:true, //if false => yearly
     plan: 1, //there's 3 plans by default it's the first one
     bonus:[] //by default no bonus
   };
@@ -25,7 +25,7 @@ function App() {
   }
   const [submited,setSubmited] = useState(false)
   //TODO: a modifier a la fin!
-  const [step,setStep]= useState(2)
+  const [step,setStep]= useState(1)
   return (
     <div className="App">
       <main>
@@ -43,7 +43,7 @@ function App() {
                step===3 ? <FormPick data={data} updateFields={updateFields}/> :
                <FormFinish data={data}/>
               }
-              
+
               <Buttons step={step} setStep={setStep} setSubmited={setSubmited} data={data}/>
             </>
           }

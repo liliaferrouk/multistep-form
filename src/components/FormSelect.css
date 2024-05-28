@@ -23,6 +23,11 @@
     font-weight: 400;
 }
 
+.free2{
+    font-size: 0.7rem;
+    color: var(--clr-p-blue-marine);
+}
+
 .plan{
     display: flex;
     justify-content: start;
@@ -63,6 +68,29 @@
     justify-content: start;
     align-items: center;
     padding: 3px;
+}
+
+.type-plan.m > .clickPlan{
+    justify-content: start;
+}
+.monthly, .yearly {
+    font-size: 0.9rem;
+    font-weight: 550;
+}
+.type-plan.m > .monthly{
+    color: var(--clr-p-blue-marine);
+}
+.type-plan.m > .yearly{
+    color: var(--clr-n-gray-cool);
+}
+.type-plan.y > .clickPlan{
+    justify-content: end;
+}
+.type-plan.y > .yearly{
+    color: var(--clr-p-blue-marine);
+}
+.type-plan.y > .monthly{
+    color: var(--clr-n-gray-cool);
 }
 
 .circle{
