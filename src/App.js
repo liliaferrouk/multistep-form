@@ -43,7 +43,7 @@ function App() {
                <FormFinish data={data}/>
               }
               
-              <Buttons step={step} setStep={setStep} setSubmited={setSubmited}/>
+              <Buttons step={step} setStep={setStep} setSubmited={setSubmited} data={data}/>
             </>
           }
         </section>

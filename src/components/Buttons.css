@@ -36,6 +36,11 @@
     background-color: hsl(213, 92%, 30%);
 }
 
+.btn-next.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
 .hidden {
     visibility: hidden;
 }

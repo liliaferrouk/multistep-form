@@ -4,28 +4,40 @@
     border-radius: 10px;
     position: relative;
     top: -4rem;
+    padding: 1.25rem;
+}
+.div-form-info >p{
+    margin-top: 5px;
+    margin-bottom: 20px;
 }
 
 .form-group {
-    margin-bottom: 1.5rem;
-  }
-  
-  .form-group label {
+    /* margin-bottom: 1.5rem; */
+}
+
+.form-group label {
     display: block;
-    margin-bottom: 0.5rem;
-    font-weight: bold;
-  }
+    color: var(--clr-p-blue-marine);
+    font-size: 0.8rem;
+}
   
-  .form-input {
+.form-input {
     width: 100%;
-    padding: 0.5rem;
+    padding-left: 0.95rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
     border: 1px solid #ccc;
     border-radius: 4px;
-    font-size: 1rem;
-  }
-  
-  .form-input:focus {
-    border-color: #007bff;
-    outline: none;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-  }
+    font-size: 0.95rem;
+    margin-bottom: 0.9rem;
+}
+
+.form-input::placeholder {
+    color: var(--clr-n-gray-cool);
+    font-weight: 500;
+}
+.form-input:focus {
+border-color: #007bff;
+outline: none;
+box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}

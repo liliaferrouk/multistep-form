@@ -31,6 +31,7 @@ function FormInfo({data,updateFields}) {
         <label htmlFor="email">Email Address</label>
         <input
           type="email"
+          required
           placeholder="e.g. stephenking@lorem.com"
           id="email"
           name="email"
@@ -43,6 +44,7 @@ function FormInfo({data,updateFields}) {
         <label htmlFor="phone">Phone Number</label>
         <input
           type="tel"
+          required
           placeholder="e.g. +1 234 567 890"
           id="phone"
           name="phoneNumber"
