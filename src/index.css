@@ -125,3 +125,23 @@ p{
   font-weight: 450;
   font-size: 0.98rem;
 }
+
+@media screen and (min-width:1000px) {
+  .App{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  main{
+    display: flex;
+    align-items: center;
+    width: 65vw;
+    background-color: var(--clr-n-White);
+    border-radius: 15px;
+    padding: 1rem;
+    justify-content: space-between;
+  }
+  section{
+    width:40vw;
+  }
+}

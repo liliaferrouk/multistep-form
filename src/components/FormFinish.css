@@ -91,3 +91,10 @@
         width: 400px;
     }
 }
+
+@media screen and (min-width:1000px) {
+    .div-form-finish{
+        top:0;
+        width:100%;
+    }
+}

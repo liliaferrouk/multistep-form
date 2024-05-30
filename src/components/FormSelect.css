@@ -37,7 +37,13 @@
     height: 4.9rem;
     margin-bottom: 10px;
     padding: 17px;
+    cursor: pointer;
 }
+
+.plan:hover{
+    border: 1.2px solid var(--clr-p-blue-purplish);
+}
+
 .plan.selected{
     background-color: var(--clr-n-Alabaster);
     border: 1.2px solid var(--clr-p-blue-purplish);
@@ -64,10 +70,10 @@
     height: 20px;
     border-radius: 15px;
     display: flex;
-    /* start / end */
     justify-content: start;
     align-items: center;
     padding: 3px;
+    cursor: pointer;
 }
 
 .type-plan.m > .clickPlan{
@@ -103,5 +109,28 @@
 @media screen and (min-width:460px) {
     .div-form-select{
         width: 400px;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .div-form-select{
+        top:0;
+        width:100%;
+        min-height: 10px;
+    }
+
+    .plansDiv{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .plan{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 9rem;
+        height: 11rem;
+        align-items: flex-start;
+        padding-inline: 1rem;
     }
 }

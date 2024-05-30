@@ -43,3 +43,10 @@ box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
         width: 400px;
     }
 }
+
+@media screen and (min-width:1000px) {
+    .div-form-info{
+        top:0;
+        width:100%;
+    }
+}

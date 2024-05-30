@@ -1,5 +1,5 @@
 .setepBar{
-    height: 25vh; /* Full height */
+    height: 25vh;
     background-image: url('../images/bg-sidebar-mobile.svg');
     background-size: cover;
     background-position: center;
@@ -26,4 +26,44 @@
     background-color: var(--clr-p-blue-light);
     border: none;
     color: var(--clr-p-blue-marine);
+}
+
+.info-step{
+    display: none;
+}
+
+@media screen and (min-width:1000px) {
+    .setepBar{
+        height: 80vh;
+        width: 30%;
+        background-image: url('../images/bg-sidebar-desktop.svg');
+        border-radius: 15px;
+        padding: 2rem;
+        gap: 1.5rem;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .info-step{
+        display: block;
+        margin-left: .8rem;
+    }
+
+    .oneStep{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .info-step >p{
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    .info-step >span{
+        color: var(--clr-n-White);
+        font-size: 1.05rem;
+        font-weight: 400;
+    }
+
 }

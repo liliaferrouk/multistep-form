@@ -20,6 +20,11 @@
     height: 4rem;
     margin-bottom: 10px;
     padding: 17px;
+    cursor: pointer;
+}
+
+.pick-div:hover{
+    border: 1.2px solid var(--clr-p-blue-purplish);
 }
 
 .pick-div.selected{
@@ -65,5 +70,16 @@
 @media screen and (min-width:460px) {
     .div-form-pick{
         width: 400px;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .div-form-pick{
+        top:0;
+        width:100%;
+    }
+
+    .pick-div{
+        height: auto;
     }
 }

@@ -2,12 +2,40 @@ import React from 'react'
 import './StepBar.css'
 
 function StepBar({step}) {
+  const steps=[
+    {
+      id:1,
+      step:"STEP 1",
+      info:"YOUR INFO"
+    },
+    {
+      id:2,
+      step:"STEP 2",
+      info:"SELECT PLAN"
+    },
+    {
+      id:3,
+      step:"STEP 3",
+      info:"ADD-ONS"
+    },
+    {
+      id:4,
+      step:"STEP 4",
+      info:"SUMMARY"
+    }
+  ]
   return (
     <div className='setepBar'>
-        {[1,2,3,4].map((n)=>(
-            <div key={n} className={`step ${step === n ? 'active' : ''}`}>
-                <div className="num">{n}</div>
+        {steps.map((s)=>(
+          <div className='oneStep'>
+            <div key={step.id} className={`step ${step === s.id ? 'active' : ''}`}>
+                <div className="num">{s.id}</div>
             </div>
+            <div className="info-step">
+              <p>{s.step}</p>
+              <span>{s.info}</span>
+            </div>
+          </div>
         ))}
     </div>
   )

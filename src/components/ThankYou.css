@@ -26,3 +26,10 @@
         width: 400px;
     }
 }
+
+@media screen and (min-width:1000px) {
+    .thankYouDiv{
+        top:0;
+        width:100%;
+    }
+}
