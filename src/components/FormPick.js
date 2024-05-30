@@ -4,6 +4,16 @@ import Pick from './Pick'
 import pickData from '../pickData'
 
 function FormPick({data,updateFields}) {
+  function isSelected(id){
+    return data.bonus.includes(id);
+  }
+  function click(id){
+    const updatedBonus = isSelected(id)
+    ? data.bonus.filter(b=> b!==id)
+    : [...data.bonus,id]
+    updateFields({bonus:updatedBonus})
+  }
+
   return (
     <div className='div-form-pick'>
       <h1>Pick add-ons</h1>
@@ -19,6 +29,8 @@ function FormPick({data,updateFields}) {
               priceMonthly={p.monthlyPrice}
               priceYearly={p.yearlyPrice}
               isMonthly={data.monthly}
+              isSelected={isSelected(p.id)}
+              hundleClick={() => click(p.id)}
             />
           )
         })
