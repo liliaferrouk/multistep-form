@@ -1,7 +1,7 @@
 import React from 'react'
 import './FormInfo.css'
 
-function FormInfo({data,updateFields}) {
+function FormInfo({data,updateFields,errors, handleBlur}) {
   const handleChange = (e) => {
     const { name, value } = e.target;
     updateFields({
@@ -9,6 +9,7 @@ function FormInfo({data,updateFields}) {
     });
     console.log("name:"+data.name+" email:"+data.email+" num: "+data.phoneNumber)
   };
+
   return (
     <div className='div-form-info'>
       <h1>Personal info</h1>
@@ -22,9 +23,11 @@ function FormInfo({data,updateFields}) {
           id="name"
           name="name"
           value={data.name}
-          onChange={e => updateFields({ name: e.target.value })}
-          className="form-input"
+          onChange={handleChange}
+          onBlur={handleBlur}
+          className={`form-input ${errors.name ? 'input-error' : ''}`}
         />
+        {errors.name && <span className="error-message">{errors.name}</span>}
       </div>
       <div className="form-group">
         <label htmlFor="email">Email Address</label>
@@ -36,8 +39,10 @@ function FormInfo({data,updateFields}) {
           name="email"
           value={data.email}
           onChange={handleChange}
-          className="form-input"
+          onBlur={handleBlur}
+          className={`form-input ${errors.email ? 'input-error' : ''}`}
         />
+        {errors.email && <span className="error-message">{errors.email}</span>}
       </div>
       <div className="form-group">
         <label htmlFor="phone">Phone Number</label>
@@ -49,8 +54,10 @@ function FormInfo({data,updateFields}) {
           name="phoneNumber"
           value={data.phoneNumber}
           onChange={handleChange}
-          className="form-input"
+          onBlur={handleBlur}
+          className={`form-input ${errors.phoneNumber ? 'input-error' : ''}`}
         />
+        {errors.phoneNumber && <span className="error-message">{errors.phoneNumber}</span>}
       </div>
     </div>
   )

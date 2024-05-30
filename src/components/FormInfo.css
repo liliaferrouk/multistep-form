@@ -38,6 +38,21 @@ outline: none;
 box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
+.input-error {
+    border-color: red;
+  }
+
+.form-group{
+    position: relative;
+}
+.error-message {
+    color: red;
+    font-size: 0.8rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
 @media screen and (min-width:460px) {
     .div-form-info{
         width: 400px;
