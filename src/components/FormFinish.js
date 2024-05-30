@@ -35,7 +35,7 @@ function FormFinish({data,setStep}) {
           <div className="additional-service">
             {selectedPicks.map(p=>{
               return(
-                <div className='add'>
+                <div key={selectedPicks.id} className='add'>
                   <p>{p.name}</p>
                   <span>{data.monthly? `+$${p.monthlyPrice}/mo`:`+$${p.yearlyPrice}/yr`}</span>
                 </div>

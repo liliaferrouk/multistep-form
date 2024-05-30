@@ -61,3 +61,9 @@
     font-size: .75rem;
     font-weight: 500;
 }
+
+@media screen and (min-width:460px) {
+    .div-form-pick{
+        width: 400px;
+    }
+}

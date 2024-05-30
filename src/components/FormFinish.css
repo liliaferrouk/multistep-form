@@ -86,3 +86,8 @@
     color: var(--clr-p-blue-marine);
 }
 
+@media screen and (min-width:460px) {
+    .div-form-finish{
+        width: 400px;
+    }
+}
