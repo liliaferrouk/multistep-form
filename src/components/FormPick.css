@@ -22,6 +22,18 @@
     padding: 17px;
 }
 
+.pick-div.selected{
+    background-color: var(--clr-n-Alabaster);
+    border: 1.2px solid var(--clr-p-blue-purplish);
+}
+
+.pick-div.selected > .checkBox{
+    background-color: var(--clr-p-blue-purplish);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .pick-div > .checkBox{
     border: 1px solid var(--clr-n-gray-cool);
     height: 1.25rem;
