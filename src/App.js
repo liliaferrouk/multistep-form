@@ -8,6 +8,7 @@ import FormPick from "./components/FormPick";
 import FormFinish from "./components/FormFinish";
 
 function App() {
+  //TODO: a modifier a la fin
   const INITIAL_DATA = {
     name: "",
     email: "",
@@ -25,7 +26,7 @@ function App() {
   }
   const [submited,setSubmited] = useState(false)
   //TODO: a modifier a la fin!
-  const [step,setStep]= useState(3)
+  const [step,setStep]= useState(1)
   return (
     <div className="App">
       <main>
@@ -41,7 +42,7 @@ function App() {
                step===1 ? <FormInfo data={data} updateFields={updateFields}/> :
                step===2 ? <FormSelect data={data} updateFields={updateFields}/> :
                step===3 ? <FormPick data={data} updateFields={updateFields}/> :
-               <FormFinish data={data}/>
+               <FormFinish data={data} setStep={setStep}/>
               }
 
               <Buttons step={step} setStep={setStep} setSubmited={setSubmited} data={data}/>

@@ -1,7 +1,88 @@
 .div-form-finish{
     width: 90%;
-    height: 23.5rem;
+    min-height: 18rem;
     border-radius: 10px;
     position: relative;
     top: -4rem;
+    padding: 1.1rem;
+    padding-inline: 1.3rem;
 }
+
+.div-form-finish >p{
+    margin-top: 6px;
+    margin-bottom: 1.5rem;
+}
+
+.div-form-finish h2{
+    font-size: .9rem;
+    font-weight: 600;
+    color: var(--clr-p-blue-marine);
+}
+
+.main-service >div >p{
+    color: var(--clr-n-gray-cool);
+    font-size: .9rem;
+    font-weight: 400;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.recap{
+    background-color: var(--clr-n-Alabaster);
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.main-service{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-service > .prix{
+    font-size: .9rem;
+    font-weight: 600;
+    color: var(--clr-p-blue-marine);
+}
+
+.total{
+    margin-top: 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline: 15px;
+}
+
+.total > p{
+    font-size: .9rem;
+    font-weight: 400;
+}
+
+.total > span{
+    color: var(--clr-p-blue-purplish);
+    font-weight: 550;
+    margin-right: 5px;
+}
+
+.additional-service{
+    margin-top: 9px;
+    border-top: .4px solid var(--clr-n-gray-cool);
+}
+
+.add{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: .7rem;
+}
+
+.add > p{
+    font-size: 0.85rem;
+    font-weight: 450;
+}
+
+.add > span{
+    font-size: .9rem;
+    color: var(--clr-p-blue-marine);
+}
+
