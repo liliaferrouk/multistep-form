@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/multistep-form/static/css/main.a04b1817.css",
-    "main.js": "/multistep-form/static/js/main.9700f5a3.js",
+    "main.css": "/multistep-form/static/css/main.eb5676fa.css",
+    "main.js": "/multistep-form/static/js/main.a9a27ab6.js",
+    "static/media/bg-sidebar-desktop.svg": "/multistep-form/static/media/bg-sidebar-desktop.6918153f38678372ceb1.svg",
     "static/media/bg-sidebar-mobile.svg": "/multistep-form/static/media/bg-sidebar-mobile.ad41661b40ca0b967f3a.svg",
     "static/media/icon-advanced.svg": "/multistep-form/static/media/icon-advanced.705bd10c4c1f688871d729633f0ca4ae.svg",
     "static/media/icon-thank-you.svg": "/multistep-form/static/media/icon-thank-you.ee753f231cc5a5789b8eb922a96472c0.svg",
@@ -9,11 +10,11 @@
     "index.html": "/multistep-form/index.html",
     "static/media/icon-arcade.svg": "/multistep-form/static/media/icon-arcade.a08c098289a31bb2f66d675be71565b3.svg",
     "static/media/icon-checkmark.svg": "/multistep-form/static/media/icon-checkmark.6ba72db67010be44885b1ad4473ab4a8.svg",
-    "main.a04b1817.css.map": "/multistep-form/static/css/main.a04b1817.css.map",
-    "main.9700f5a3.js.map": "/multistep-form/static/js/main.9700f5a3.js.map"
+    "main.eb5676fa.css.map": "/multistep-form/static/css/main.eb5676fa.css.map",
+    "main.a9a27ab6.js.map": "/multistep-form/static/js/main.a9a27ab6.js.map"
   },
   "entrypoints": [
-    "static/css/main.a04b1817.css",
-    "static/js/main.9700f5a3.js"
+    "static/css/main.eb5676fa.css",
+    "static/js/main.a9a27ab6.js"
   ]
 }
