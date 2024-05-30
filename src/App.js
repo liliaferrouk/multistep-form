@@ -25,7 +25,7 @@ function App() {
   }
   const [submited,setSubmited] = useState(false)
   //TODO: a modifier a la fin!
-  const [step,setStep]= useState(1)
+  const [step,setStep]= useState(3)
   return (
     <div className="App">
       <main>

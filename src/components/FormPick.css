@@ -1,7 +1,51 @@
 .div-form-pick{
     width: 90%;
-    height: 23.5rem;
+    height: 24rem;
     border-radius: 10px;
     position: relative;
     top: -4rem;
+    padding: 1.2rem;
+}
+
+.div-form-pick >p{
+    margin-top: 3px;
+    margin-bottom: 1.5rem;
+}
+
+.pick-div{
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--clr-n-gray-cool);
+    border-radius: 8px;
+    height: 4rem;
+    margin-bottom: 10px;
+    padding: 17px;
+}
+
+.pick-div > .checkBox{
+    border: 1px solid var(--clr-n-gray-cool);
+    height: 1.25rem;
+    width: 1.25rem;
+    border-radius: 4px;
+}
+
+.pick-div .info{
+    margin-left: 1rem;
+}
+
+.pick-div h2{
+    font-size: .9rem;
+    font-weight: 550;
+    color: var(--clr-p-blue-marine);
+}
+
+.pick-div p{
+    font-size: .73rem;
+}
+
+.price{
+    margin-left: auto;
+    color: var(--clr-p-blue-purplish);
+    font-size: .75rem;
+    font-weight: 500;
 }
