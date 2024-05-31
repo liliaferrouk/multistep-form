@@ -136,6 +136,7 @@ p{
     display: flex;
     align-items: center;
     width: 65vw;
+    height: 500px;
     background-color: var(--clr-n-White);
     border-radius: 15px;
     padding: 1rem;
@@ -143,5 +144,7 @@ p{
   }
   section{
     width:40vw;
+    height: 470px;
+    min-height: 470px;
   }
 }

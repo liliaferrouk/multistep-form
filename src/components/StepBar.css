@@ -34,7 +34,7 @@
 
 @media screen and (min-width:1000px) {
     .setepBar{
-        height: 80vh;
+        height: 470px;
         width: 30%;
         background-image: url('../images/bg-sidebar-desktop.svg');
         border-radius: 15px;
