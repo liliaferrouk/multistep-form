@@ -27,8 +27,8 @@ function StepBar({step}) {
   return (
     <div className='setepBar'>
         {steps.map((s)=>(
-          <div className='oneStep'>
-            <div key={step.id} className={`step ${step === s.id ? 'active' : ''}`}>
+          <div key={s.id} className='oneStep'>
+            <div className={`step ${step === s.id ? 'active' : ''}`}>
                 <div className="num">{s.id}</div>
             </div>
             <div className="info-step">
